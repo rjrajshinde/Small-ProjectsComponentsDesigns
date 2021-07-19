@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-color: #55aae1;
+}
+
+body {
+  background-color: #f2f7fe;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.title {
+  margin-bottom: 3em;
+  text-align: center;
+}
+.underline {
+  height: 2px;
+  background-color: var(--primary-color);
+  width: 130px;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 27px;
+  text-align: center;
+  transition: 1s ease-in;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* transition: all 0.3s linear; */
+}
+
+.review:hover {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#person-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 5px -3px 0 1px var(--primary-color);
+}
+
+/* .img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+} */
+
+#person-name {
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+#person-job {
+  font-size: 13px;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+}
+
+#person-info {
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.prev-btn,
+.next-btn {
+  border: transparent;
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: black;
+}
+
+.random-btn {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.random-btn:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  .img-container {
+    width: 120px;
+    height: 120px;
+  }
+  #person-info {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    margin: 0 20px;
+  }
+  .container {
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  .img-container {
+    width: 100px;
+    height: 100px;
+  }
+  #person-name {
+    font-size: 15px;
+  }
+  #person-job {
+    font-size: 10 px;
+  }
+  #person-info {
+    font-size: 12px;
+  }
+  .random-btn {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  .title {
+    margin-bottom: 1.3em;
+  }
+  .title-heading {
+    font-size: 23px;
+    margin-bottom: -15px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    font-size: 15px;
+  }
+}
