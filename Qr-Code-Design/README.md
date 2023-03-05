@@ -18,7 +18,4 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## Demo
 
-```bash
-  https://king-qrcodedesign.netlify.app/
-```
 > [https://king-qrcodedesign.netlify.app/](https://king-qrcodedesign.netlify.app/)
